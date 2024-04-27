@@ -1,0 +1,297 @@
+{
+    "apk_name": "smartplug.apk",
+    "package_name": "cm.aptoide.pt",
+    "permission": [
+        "android.permission.WAKE_LOCK",
+        "android.permission.READ_SYNC_STATS",
+        "com.android.launcher.permission.INSTALL_SHORTCUT",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.INSTALL_PACKAGES",
+        "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.READ_SYNC_SETTINGS",
+        "android.permission.WRITE_SYNC_SETTINGS",
+        "android.permission.AUTHENTICATE_ACCOUNTS",
+        "android.permission.GET_ACCOUNTS",
+        "android.permission.MANAGE_ACCOUNTS",
+        "android.permission.INTERNET",
+        "android.permission.USE_CREDENTIALS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+    ],
+    "dangerous_permission": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.INSTALL_PACKAGES",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.GET_ACCOUNTS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA"
+    ],
+    "manifest_analysis": {
+        "activities": {
+            "all": [
+                "com.mopub.common.privacy.ConsentDialogActivity",
+                "com.mopub.common.MoPubBrowser",
+                "com.mopub.mobileads.MoPubActivity",
+                "com.mopub.mobileads.MraidActivity",
+                "com.mopub.mobileads.RewardedMraidActivity",
+                "com.mopub.mobileads.MraidVideoPlayerActivity",
+                "cm.aptoide.pt.view.MainActivity",
+                "com.unity3d.services.ads.adunit.AdUnitActivity",
+                "com.unity3d.services.ads.adunit.AdUnitTransparentActivity",
+                "com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity",
+                "com.unity3d.services.ads.adunit.AdUnitSoftwareActivity",
+                "cm.aptoide.pt.wallet.WalletInstallActivity",
+                "com.applovin.adview.AppLovinInterstitialActivity",
+                "com.applovin.adview.AppLovinConfirmationActivity",
+                "com.inmobi.rendering.InMobiAdActivity",
+                "cm.aptoide.pt.account.view.LoginActivity",
+                "com.facebook.FacebookActivity",
+                "com.facebook.CustomTabActivity",
+                "cm.aptoide.pt.DeepLinkIntentReceiver",
+                "com.smaato.soma.interstitial.InterstitialActivity",
+                "com.smaato.soma.ExpandedBannerActivity",
+                "com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity",
+                "com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity",
+                "com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore",
+                "cm.aptoide.aptoideviews.base.MockActivity",
+                "com.vungle.warren.ui.VungleActivity",
+                "com.vungle.warren.ui.VungleFlexViewActivity",
+                "com.vungle.warren.ui.VungleWebViewActivity",
+                "com.facebook.CustomTabMainActivity",
+                "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+                "com.google.android.gms.common.api.GoogleApiActivity",
+                "com.google.android.gms.ads.AdActivity",
+                "com.appnext.ads.interstitial.InterstitialActivity",
+                "com.appnext.ads.fullscreen.FullscreenActivity",
+                "com.appnext.banners.BannerActivity",
+                "com.appnext.core.ResultActivity",
+                "com.appnext.core.result.ResultPageActivity"
+            ],
+            "exported": [
+                "com.facebook.CustomTabActivity",
+                "cm.aptoide.pt.DeepLinkIntentReceiver"
+            ]
+        },
+        "services": {
+            "all": [
+                "cm.aptoide.pt.account.AccountAuthenticatorService",
+                "cm.aptoide.pt.notification.PullingContentService",
+                "cm.aptoide.pt.install.DownloadService",
+                "cm.aptoide.pt.install.InstalledIntentService",
+                "com.google.android.gms.auth.api.signin.RevocationBoundService",
+                "androidx.work.impl.background.systemalarm.SystemAlarmService",
+                "androidx.work.impl.background.systemjob.SystemJobService",
+                "androidx.room.MultiInstanceInvalidationService",
+                "com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService",
+                "com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService",
+                "com.appnext.core.AdsService",
+                "com.appnext.base.services.OperationService",
+                "com.appnext.base.services.OperationJobService"
+            ],
+            "exported": [
+                "com.google.android.gms.auth.api.signin.RevocationBoundService",
+                "androidx.work.impl.background.systemjob.SystemJobService",
+                "com.appnext.base.services.OperationJobService"
+            ]
+        },
+        "receivers": {
+            "all": [
+                "cm.aptoide.pt.install.InstalledBroadcastReceiver",
+                "cm.aptoide.pt.notification.NotificationReceiver",
+                "cm.aptoide.pt.link.CustomTabNativeReceiver",
+                "cm.aptoide.pt.install.CheckRootOnBoot",
+                "cm.aptoide.pt.install.RootInstallNotificationEventReceiver",
+                "cm.aptoide.pt.widget.SearchWidgetProvider",
+                "com.fyber.inneractive.sdk.mraid.IAMraidKit",
+                "com.fyber.inneractive.sdk.nativead.IANativeKit",
+                "com.fyber.inneractive.sdk.video.IAVideoKit",
+                "com.vungle.warren.NetworkStateReceiver",
+                "com.facebook.CurrentAccessTokenExpirationBroadcastReceiver",
+                "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+                "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+                "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+                "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+                "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+                "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+                "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+                "com.appnext.base.receivers.AppnextBootReciever"
+            ],
+            "exported": []
+        },
+        "providers": {
+            "all": [
+                "cm.aptoide.pt.toolbox.ToolboxContentProvider",
+                "androidx.core.content.FileProvider",
+                "com.facebook.internal.FacebookInitProvider",
+                "com.google.android.gms.ads.MobileAdsInitProvider",
+                "androidx.lifecycle.ProcessLifecycleOwnerInitializer",
+                "com.flurry.android.agent.FlurryContentProvider"
+            ],
+            "exported": [
+                "cm.aptoide.pt.toolbox.ToolboxContentProvider"
+            ]
+        }
+    },
+    "hardcoded_secrets": [
+        {
+            "type": "ip_address:",
+            "ioc": "9.17.3.0",
+            "path": "resources\\AndroidManifest.xml"
+        },
+        {
+            "type": "google_oauth_id:",
+            "ioc": "7aqsaffv18r3k1ebthkchfi3nibft5vq.apps.googleusercontent.com",
+            "path": "sources\\cm\\aptoide\\pt\\BuildConfig.java"
+        },
+        {
+            "type": "generic_api_key:",
+            "ioc": "API_KEY",
+            "path": "sources\\cm\\aptoide\\pt\\BuildConfig.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "8.1.4.3",
+            "path": "sources\\cm\\aptoide\\pt\\BuildConfig.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\cm\\aptoide\\pt\\BuildConfig.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "9.17.3.0",
+            "path": "sources\\cm\\aptoide\\pt\\BuildConfig.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.1.3.1",
+            "path": "sources\\cm\\aptoide\\pt\\account\\view\\magiclink\\SendMagicLinkPresenter$handleSendMagicLinkClick$2.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\ads\\fullscreen\\FullscreenAdsManager.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\ads\\fullscreen\\Video.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\ads\\interstitial\\Interstitial.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\ads\\interstitial\\InterstitialActivity.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\appnextsdk\\API\\Native.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\appnextsdk\\API\\NativeAdObject.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\banners\\BannerAd.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\banners\\JSBannerAdapter.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\core\\AdsManager.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\core\\AppnextHelperClass.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\core\\BuildConfig.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\nativeads\\NativeAd.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\appnext\\nativeads\\NativeAdObject.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "0.4.5.19",
+            "path": "sources\\com\\asf\\appcoins\\sdk\\contractproxy\\BuildConfig.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "0.4.5.19",
+            "path": "sources\\com\\asf\\appcoins\\sdk\\core\\BuildConfig.java"
+        },
+        {
+            "type": "google_api:",
+            "ioc": "AIzaSyDRKQ9d6kfsoZT2lUnZcZnBYvH69HExNPE",
+            "path": "sources\\com\\google\\android\\gms\\internal\\ads\\zzacu.java"
+        },
+        {
+            "type": "generic_api_key:",
+            "ioc": "api_key\",",
+            "path": "sources\\com\\google\\android\\gms\\internal\\ads\\zzacu.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "1.1.1.1",
+            "path": "sources\\com\\inmobi\\rendering\\a\\c.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "3.0.1.0",
+            "path": "sources\\com\\mopub\\mobileads\\UnityAdsAdapterConfiguration.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "17.2.1.0",
+            "path": "sources\\com\\mopub\\mobileads\\admob\\BuildConfig.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "6.3.24.2",
+            "path": "sources\\com\\mopub\\mobileads\\vungle\\BuildConfig.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "2.4.8.47",
+            "path": "sources\\com\\mopub\\nativeads\\AppnextBaseAdapterConfiguration.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "7.2.6.0",
+            "path": "sources\\com\\mopub\\nativeads\\InMobiBaseAdapterConfiguration.java"
+        },
+        {
+            "type": "ip_address:",
+            "ioc": "224.0.0.251",
+            "path": "sources\\o\\a\\g\\l.java"
+        }
+    ]
+}
